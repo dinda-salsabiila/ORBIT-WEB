@@ -31,6 +31,7 @@
 .section1 {
   background-color: #83A0A0;
   margin-bottom: 0px;
+  min-height: 150px;
 }
 .about h2{
   font-family: Garamond, serif;
@@ -151,6 +152,7 @@ img {vertical-align: middle;}
 .section2 {
   background: #2B3D41;
   margin-top: 0px;
+  padding-top: 10px;
 }
 .flip-card {
   background-color: transparent;
@@ -285,7 +287,7 @@ html {
   background-image: url("https://asset.kompas.com/crops/ftvQnbADO-mJSwteVa2MwxN_kdY=/0x0:1000x667/750x500/data/photo/2020/08/28/5f48bc886c5c8.jpg");
 
   /* Set a specific height */
-  min-height: 200px;
+  min-height: 220px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
