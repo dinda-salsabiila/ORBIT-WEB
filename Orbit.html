@@ -8,6 +8,32 @@
 </head>
 <body>
 
+<div id="overlay" onclick="off()">
+  <div id="text">Ini si yusril</div>
+</div>
+
+<div id="overlay1" onclick="off1()">
+  <div id="text">Ini si gilang</div>
+</div>
+
+<div id="overlay2" onclick="off2()">
+  <div id="text">Ini si dinda</div>
+</div>
+
+<div id="overlay3" onclick="off3()">
+  <div id="text">Ini si razzan</div>
+</div>
+
+<div id="overlay4" onclick="off4()">
+  <div id="text">Ini si daffa</div>
+</div>
+
+<ul>
+  <li><a class="active" href="#about">About</a></li>
+  <li><a href="#Scan">Scan</a></li>
+  <li><a href="#meettheteam">Meet The Team</a></li>
+</ul>
+
 <div class="section1">
   <div class="parallax">
     <div class="header">
@@ -19,7 +45,7 @@
  
   <div class="about">
     <header>
-      <h2>ABOUT</h2>
+      <h2 id="about">ABOUT</h2>
       <p>Sistem yang dapat mendeteksi "Wild Edible Plants" atau tanaman yang aman untuk dikonsumsi. 
       Tujuan dari dibuatnya platform ini adalah untuk memudahkan masyarakat yang berada di alam liar 
       agar dapat mengkonsumsi tanaman yang aman di sekitarnya dan memperluas wawasan masyarakat tentang
@@ -150,7 +176,7 @@
 
 <div class="section2">
   <div class="scan-title">
-    <h3 >Click the card below</h3>
+    <h3 id="Scan">Click the card below</h3>
   </div>
 
   <div class="flip-card">
@@ -166,7 +192,7 @@
 
   <div class="parallax2">
     <div class="team-header"> 
-      <h2>Meet The Team</h2>
+      <h2 id="meettheteam">Meet The Team</h2>
     </div>
 
     <div class="row">
@@ -176,7 +202,7 @@
           <div class="container">
             <h2>Yusril Nurhikam</h2>
             <p class="title">CEO & Founder</p>
-            <p><button class="button">Contact</button></p>
+            <button class="button" onclick="on()">Contact</button>
           </div>
         </div>
       </div>
@@ -186,8 +212,8 @@
         <img src="/w3images/team2.jpg" alt="Gilang Ramadhan" style="width:100%">
         <div class="container">
           <h2>Gilang Ramadhan</h2>
-          <p class="title">Art Director</p>
-          <p><button class="button">Contact</button></p>
+          <p class="title">Art Director and CEO</p>
+          <p><button class="button" onclick="on1()">Contact</button></p>
         </div>
       </div>
     </div>
@@ -197,19 +223,19 @@
         <img src="/w3images/team3.jpg" alt="Dinda Salsabiila" style="width:100%">
         <div class="container">
           <h2>Dinda Salsabiila</h2>
-          <p class="title">Designer</p>
-          <p><button class="button">Contact</button></p>
+          <p class="title">Designer and CEO</p>
+          <p><button class="button"  onclick="on2()">Contact</button></p>
         </div>
       </div>
     </div>
 
     <div class="column">
       <div class="card">
-        <img src="/w3images/team3.jpg" alt="Razzan" style="width:100%">
+        <img src="/w3images/team3.jpg" alt="Razzan Mustofa" style="width:100%">
         <div class="container">
-          <h2>Razzan</h2>
-          <p class="title">Designer</p>
-          <p><button class="button">Contact</button></p>
+          <h2>Razzan Mustofa</h2>
+          <p class="title">Designer and CEO</p>
+          <p><button class="button"  onclick="on3()">Contact</button></p>
         </div>
       </div>
     </div>
@@ -219,8 +245,8 @@
         <img src="/w3images/team3.jpg" alt="Daffa Aji Pangestu" style="width:100%">
         <div class="container">
           <h2>Daffa Aji Pangestu</h2>
-          <p class="title">Designer</p>
-          <p><button class="button">Contact</button></p>
+          <p class="title">Designer and CEO</p>
+          <p><button class="button" onclick="on4()">Contact</button></p>
         </div>
       </div>
     </div>
@@ -253,6 +279,37 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+}
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+}
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
+}
+function on4() {
+  document.getElementById("overlay4").style.display = "block";
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+function off4() {
+  document.getElementById("overlay4").style.display = "none";
 }
 </script>
 </div>
